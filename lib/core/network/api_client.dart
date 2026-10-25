@@ -1,0 +1,222 @@
+import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
+
+import '../config/app_config.dart';
+import '../theme/app_theme.dart';
+
+class DemoMetricCard extends StatelessWidget {
+  final String? title;
+  final String? label;
+  final String value;
+  final String? subtitle;
+  final String? caption;
+  final IconData? icon;
+  final Color? color;
+  final Color? highlight;
+  final bool isDark;
+  final VoidCallback? onTap;
+
+  const DemoMetricCard({
+    super.key,
+    this.title,
+    this.label,
+    required this.value,
+    this.subtitle,
+    this.caption,
+    this.icon,
+    this.color,
+    this.highlight,
+    this.isDark = false,
+    this.onTap,
+  }) : assert(
+         title != null || label != null,
+         'DemoMetricCard requires either title or label.',
+       );
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final resolvedTitle = (title ?? label ?? '').trim();
+    final resolvedSubtitle = (subtitle ?? caption ?? '').trim();
+    final foregroundColor = isDark ? Colors.white : AppColors.textPrimary;
+    final mutedColor =
+        isDark ? Colors.white.withValues(alpha: 0.72) : AppColors.textSecondary;
+    final accentColor = highlight ?? color ?? AppColors.primary;
+    final cardRadius = BorderRadius.circular(22);
+
+    final card = AppCard(
+      backgroundColor: isDark ? AppColors.primaryDark : AppColors.surface,
+      padding: EdgeInsets.zero,
+      child: SizedBox(
+        height: 150,
+        child: ClipRRect(
+          borderRadius: cardRadius,
+          child: Stack(
+            clipBehavior: Clip.hardEdge,
+            children: [
+              PositionedDirectional(
+                top: -24,
+                start: -24,
+                child: Container(
+                  width: 96,
+                  height: 96,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color:
+                        isDark
+                            ? Colors.white.withValues(alpha: 0.06)
+                            : AppColors.background,
+                  ),
+                ),
+              ),
+              PositionedDirectional(
+                top: 16,
+                end: 16,
+                child: Container(
+                  width: 42,
+                  height: 42,
+                  decoration: BoxDecoration(
+                    color:
+                        isDark
+                            ? Colors.white.withValues(alpha: 0.12)
+                            : accentColor.withValues(alpha: 0.10),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  child: Icon(
+                    icon ?? Icons.insights_rounded,
+                    color: isDark ? Colors.white : accentColor,
+                    size: 21,
+                  ),
+                ),
+              ),
+              PositionedDirectional(
+                start: 16,
+                end: 66,
+                top: 42,
+                child: Text(
+                  resolvedTitle,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: theme.textTheme.labelLarge?.copyWith(
+                    color: mutedColor,
+                    fontWeight: FontWeight.w700,
+                    height: 1,
+                  ),
+                ),
+              ),
+              PositionedDirectional(
+                start: 16,
+                end: 16,
+                top: 68,
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  alignment: AlignmentDirectional.centerStart,
+                  child: Text(
+                    value,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: theme.textTheme.headlineSmall?.copyWith(
+                      color: foregroundColor,
+                      fontWeight: FontWeight.w900,
+                      height: 1,
+                      letterSpacing: -0.4,
+                    ),
+                  ),
+                ),
+              ),
+              PositionedDirectional(
+                start: 16,
+                end: 16,
+                bottom: 14,
+                child: Text(
+                  resolvedSubtitle.isEmpty ? ' ' : resolvedSubtitle,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: theme.textTheme.labelSmall?.copyWith(
+                    color: mutedColor,
+                    fontWeight: FontWeight.w600,
+                    height: 1,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+
+    if (onTap == null) {
+      return card;
+    }
+
+    return Material(
+      color: Colors.transparent,
+      borderRadius: cardRadius,
+      child: InkWell(onTap: onTap, borderRadius: cardRadius, child: card),
+    );
+  }
+}
+
+/// A narrow palette used by the preserved DemoMetricCard implementation.
+class AppColors {
+  static const primary = AppTheme.primary;
+  static const primaryDark = Color(0xFF25356F);
+  static const surface = Color(0xFFFFFFFF);
+  static const background = AppTheme.lightBackground;
+  static const textPrimary = Color(0xFF0A1533);
+  static const textSecondary = Color(0xFF58627E);
+}
+
+class AppCard extends StatelessWidget {
+  const AppCard({
+    super.key,
+    required this.backgroundColor,
+    required this.padding,
+    required this.child,
+  });
+
+  final Color backgroundColor;
+  final EdgeInsets padding;
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) => Container(
+    decoration: BoxDecoration(
+      color: backgroundColor,
+      borderRadius: BorderRadius.circular(22),
+    ),
+    padding: padding,
+    child: child,
+  );
+}
+
+/// Dio client for the read-only API operations currently wired in the app.
+class ApiClient {
+  ApiClient({Dio? dio}) : _dio = dio ?? Dio(_baseOptions());
+
+  final Dio _dio;
+
+  Dio get dio => _dio;
+
+  static BaseOptions _baseOptions() => BaseOptions(
+    baseUrl: ApiConfig.baseUrl,
+    connectTimeout: const Duration(seconds: 20),
+    receiveTimeout: const Duration(seconds: 20),
+    headers: const {'Accept': 'application/json'},
+  );
+
+  Future<Response<T>> get<T>(
+    String path, {
+    Map<String, dynamic>? queryParameters,
+    CancelToken? cancelToken,
+  }) {
+    final cleanedQuery = queryParameters?.map(
+      (key, value) => MapEntry(key, value is String ? value.trim() : value),
+    );
+    return _dio.get<T>(
+      path,
+      queryParameters: cleanedQuery,
+      cancelToken: cancelToken,
+    );
+  }
+}

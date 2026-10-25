@@ -1,0 +1,834 @@
+{
+	"info": {
+		"_postman_id": "585b1985-6bfe-4740-bdf8-35d7350ac8fd",
+		"name": "pharmacy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27087473"
+	},
+	"item": [
+		{
+			"name": "MedicationDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/MedicationDetails?country=Jordan&stringSerch=b&searchType=TradeName ",
+					"protocol": "https",
+					"host": [
+						"digital-pharmacy-68073877190",
+						"europe-west1",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"MedicationDetails"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "Jordan"
+						},
+						{
+							"key": "stringSerch",
+							"value": "b"
+						},
+						{
+							"key": "searchType",
+							"value": "TradeName "
+						}
+					]
+				},
+				"description": "country (Palestine = 1 , Jordan = 0)\n\nSearchType ( TradeName = 1, ScientificName = 2)"
+			},
+			"response": [
+				{
+					"name": "MedicationDetails",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/MedicationDetails?country=Jordan&searchType=TradeName ",
+							"protocol": "https",
+							"host": [
+								"digital-pharmacy-68073877190",
+								"europe-west1",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"MedicationDetails"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "Jordan"
+								},
+								{
+									"key": "stringSerch",
+									"value": "Ver",
+									"disabled": true
+								},
+								{
+									"key": "searchType",
+									"value": "TradeName "
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 07 Jan 2026 19:46:33 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"tradeName\": \"Bulmon\",\n        \"scientificName\": \"Moxifloxacin\"\n    },\n    {\n        \"tradeName\": \"Verquvo\",\n        \"scientificName\": \"Vericiguat micronized\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Alternatives",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/MedicationDetails/Alternatives?id=2",
+					"protocol": "https",
+					"host": [
+						"digital-pharmacy-68073877190",
+						"europe-west1",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"MedicationDetails",
+						"Alternatives"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Alternatives",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/MedicationDetails/Alternatives?id=2",
+							"protocol": "https",
+							"host": [
+								"digital-pharmacy-68073877190",
+								"europe-west1",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"MedicationDetails",
+								"Alternatives"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 07 Jan 2026 20:05:36 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 3,\n        \"tradeName\": \"Verquvo\",\n        \"scientificName\": \"Vericiguat micronized\",\n        \"usage\": \"Indicated to reduce the risk of cardiovascular death and heart failure\",\n        \"company\": \"Bayer\",\n        \"agent\": \"مستودع خوري\",\n        \"pharmaceuticalForm\": \"17033 2.5 mg 14 tab\",\n        \"price\": 53.48,\n        \"agentsPhoneNumber\": \"65827015\",\n        \"country\": 0\n    },\n    {\n        \"id\": 4,\n        \"tradeName\": \"Verquvo\",\n        \"scientificName\": \"Vericiguat micronized\",\n        \"usage\": \"Indicated to reduce the risk of cardiovascular death and heart failure\",\n        \"company\": \"Bayer\",\n        \"agent\": \"مستودع خوري\",\n        \"pharmaceuticalForm\": \"17033 5 mg 14 tab\",\n        \"price\": 53.48,\n        \"agentsPhoneNumber\": \"65827015\",\n        \"country\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Pharmacies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/Pharmacies?country=Jordan&stringSerch=روسالين - (دوقرة سابقا)    &searchType=Name",
+					"protocol": "https",
+					"host": [
+						"digital-pharmacy-68073877190",
+						"europe-west1",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"Pharmacies"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "Jordan"
+						},
+						{
+							"key": "stringSerch",
+							"value": "روسالين - (دوقرة سابقا)    "
+						},
+						{
+							"key": "searchType",
+							"value": "Name"
+						}
+					]
+				},
+				"description": "country (Palestine = 1 , Jordan = 0)\n\nSearchType ( Name = 1, Address = 2, ManagerName = 3, PhoneNumber = 4,)"
+			},
+			"response": [
+				{
+					"name": "Pharmacies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/Pharmacies?country=Jordan",
+							"protocol": "https",
+							"host": [
+								"digital-pharmacy-68073877190",
+								"europe-west1",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"Pharmacies"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "Jordan"
+								},
+								{
+									"key": "stringSerch",
+									"value": "روسالين - (دوقرة سابقا)    ",
+									"disabled": true
+								},
+								{
+									"key": "searchType",
+									"value": "Name",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 07 Jan 2026 21:49:57 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"روسالين - (دوقرة سابقا)\",\n        \"address\": \"المفرق - حي الحسين - شارع فراس - بجانب سلطة المياه\",\n        \"managerName\": \"اسراء محمد سعيد شبير\",\n        \"phoneNumber\": \"791489605\",\n        \"country\": 0\n    },\n    {\n        \"id\": 2,\n        \"name\": \"المحطة\",\n        \"address\": \"المفرق - وسط البلد - قرب العلاونة للصرافة\",\n        \"managerName\": \"استبرق محمود علي المشاقبه\",\n        \"phoneNumber\": \"777613930\",\n        \"country\": 0\n    },\n    {\n        \"id\": 3,\n        \"name\": \"فريج ( المفرق )\",\n        \"address\": \"المفرق - شارع علي عابدية\",\n        \"managerName\": \"مرح عبد الحكيم محمد الصالح\",\n        \"phoneNumber\": \"772539100\",\n        \"country\": 0\n    },\n    {\n        \"id\": 4,\n        \"name\": \"البيروتي\",\n        \"address\": \"المفرق - مدينة المفرق - شارع علي عايدة\",\n        \"managerName\": \"رغد كمال عبدالفتاح الحسن\",\n        \"phoneNumber\": \"798868533\",\n        \"country\": 0\n    },\n    {\n        \"id\": 5,\n        \"name\": \"الزعبي\",\n        \"address\": \"المفرق - شارع الملك فيصل\",\n        \"managerName\": \"روان محمد حمدان الحوامده\",\n        \"phoneNumber\": \"796520096\",\n        \"country\": 0\n    },\n    {\n        \"id\": 6,\n        \"name\": \"لورنس الجديدة - لورنس سابقا - شركة لورنس كبوشي\",\n        \"address\": \"المفرق - مقابل حمة المفرق - شارع الملك فيصل\",\n        \"managerName\": \"زيد محمد سعيد عريض\",\n        \"phoneNumber\": \"792867149\",\n        \"country\": 0\n    },\n    {\n        \"id\": 7,\n        \"name\": \"الوسط - شركة صيدلية بالي\",\n        \"address\": \"المفرق - شارع الملك فيصل\",\n        \"managerName\": \"سعيد جمال سعيد العريض\",\n        \"phoneNumber\": \"796240704\",\n        \"country\": 0\n    },\n    {\n        \"id\": 8,\n        \"name\": \"الشريدة\",\n        \"address\": \"المفرق - شارع الملك طلال\",\n        \"managerName\": \"هند عبدالعزيز الشريدة\",\n        \"phoneNumber\": \"795243573\",\n        \"country\": 0\n    },\n    {\n        \"id\": 9,\n        \"name\": \"الشريدة\",\n        \"address\": \"المفرق - شارع الملك طلال\",\n        \"managerName\": \"سوسن تيسير عبدالقادر الصباغ\",\n        \"phoneNumber\": \"777904652\",\n        \"country\": 0\n    },\n    {\n        \"id\": 10,\n        \"name\": \"الشريدة\",\n        \"address\": \"المفرق - شارع الملك طلال\",\n        \"managerName\": \"ولاء قاسم حسين الرجوب\",\n        \"phoneNumber\": \"776767352\",\n        \"country\": 0\n    },\n    {\n        \"id\": 11,\n        \"name\": \"المفرق\",\n        \"address\": \"المفرق - شارع الملك طلال - مقابل البلدية\",\n        \"managerName\": \"تماره طلال محمد عرايضة\",\n        \"phoneNumber\": \"795991251\",\n        \"country\": 0\n    },\n    {\n        \"id\": 12,\n        \"name\": \"المفرق\",\n        \"address\": \"المفرق - شارع الملك طلال - مقابل البلدية\",\n        \"managerName\": \"روان محمد حمدان الحوامده\",\n        \"phoneNumber\": \"796520096\",\n        \"country\": 0\n    },\n    {\n        \"id\": 13,\n        \"name\": \"شركة صيدلية لوسي - اسماعيل الشرع - اربد -11- سلسلة صيدليات\",\n        \"address\": \"المفرق - البادية الشمالية - منطقة الزعتري - قطعة رقم (49) حوض (7)\",\n        \"managerName\": \"اسيل مشعل مصطفى العزام\",\n        \"phoneNumber\": \"789891956\",\n        \"country\": 0\n    },\n    {\n        \"id\": 14,\n        \"name\": \"شركة صيدلية لوسي - اسماعيل الشرع - اربد -11- سلسلة صيدليات\",\n        \"address\": \"المفرق - البادية الشمالية - منطقة الزعتري - قطعة رقم (49) حوض (7)\",\n        \"managerName\": \"يزن خلف جازي البري\",\n        \"phoneNumber\": \"772498911\",\n        \"country\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get By Pharmaceutical Form",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/MedicationDetails/PharmaceuticalForm?id=2",
+					"protocol": "https",
+					"host": [
+						"digital-pharmacy-68073877190",
+						"europe-west1",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"MedicationDetails",
+						"PharmaceuticalForm"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get By Pharmaceutical Form",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/MedicationDetails/PharmaceuticalForm?id=3",
+							"protocol": "https",
+							"host": [
+								"digital-pharmacy-68073877190",
+								"europe-west1",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"MedicationDetails",
+								"PharmaceuticalForm"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 07 Jan 2026 19:13:03 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"tradeName\": \"Verquvo\",\n        \"scientificName\": \"Vericiguat micronized\",\n        \"usage\": \"Indicated to reduce the risk of cardiovascular death and heart failure\",\n        \"company\": \"Bayer\",\n        \"agent\": \"مستودع خوري\",\n        \"pharmaceuticalForm\": \"17033 10 mg 28 tab\",\n        \"price\": 106.95,\n        \"agentsPhoneNumber\": \"65827015\",\n        \"country\": 0\n    },\n    {\n        \"id\": 3,\n        \"tradeName\": \"Verquvo\",\n        \"scientificName\": \"Vericiguat micronized\",\n        \"usage\": \"Indicated to reduce the risk of cardiovascular death and heart failure\",\n        \"company\": \"Bayer\",\n        \"agent\": \"مستودع خوري\",\n        \"pharmaceuticalForm\": \"17033 2.5 mg 14 tab\",\n        \"price\": 53.48,\n        \"agentsPhoneNumber\": \"65827015\",\n        \"country\": 0\n    },\n    {\n        \"id\": 4,\n        \"tradeName\": \"Verquvo\",\n        \"scientificName\": \"Vericiguat micronized\",\n        \"usage\": \"Indicated to reduce the risk of cardiovascular death and heart failure\",\n        \"company\": \"Bayer\",\n        \"agent\": \"مستودع خوري\",\n        \"pharmaceuticalForm\": \"17033 5 mg 14 tab\",\n        \"price\": 53.48,\n        \"agentsPhoneNumber\": \"65827015\",\n        \"country\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Company",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/MedicationDetails/Company?country=0&stringSerch=Er",
+					"protocol": "https",
+					"host": [
+						"digital-pharmacy-68073877190",
+						"europe-west1",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"MedicationDetails",
+						"Company"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "0"
+						},
+						{
+							"key": "stringSerch",
+							"value": "Er"
+						}
+					]
+				},
+				"description": "country (Palestine = 1 , Jordan = 0)"
+			},
+			"response": [
+				{
+					"name": "Get Company",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/MedicationDetails/Company?country=0",
+							"protocol": "https",
+							"host": [
+								"digital-pharmacy-68073877190",
+								"europe-west1",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"MedicationDetails",
+								"Company"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "0"
+								},
+								{
+									"key": "stringSerch",
+									"value": "Er",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 07 Jan 2026 19:19:55 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"company\": \"Bayer\",\n        \"agent\": \"مستودع خوري\",\n        \"agentsPhoneNumber\": \"65827015\"\n    },\n    {\n        \"company\": \"Bluepharma\",\n        \"agent\": \"مستودع نيروخ\",\n        \"agentsPhoneNumber\": \"65657221\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Medication Details By Company",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/MedicationDetails/ByCompanyName?country=0&companyName=Bluepharma",
+					"protocol": "https",
+					"host": [
+						"digital-pharmacy-68073877190",
+						"europe-west1",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"MedicationDetails",
+						"ByCompanyName"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "0"
+						},
+						{
+							"key": "companyName",
+							"value": "Bluepharma"
+						}
+					]
+				},
+				"description": "country (Palestine = 1 , Jordan = 0)"
+			},
+			"response": [
+				{
+					"name": "Medication Details By Company",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/MedicationDetails/ByCompanyName?country=0&companyName=Bluepharma",
+							"protocol": "https",
+							"host": [
+								"digital-pharmacy-68073877190",
+								"europe-west1",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"MedicationDetails",
+								"ByCompanyName"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "0"
+								},
+								{
+									"key": "companyName",
+									"value": "Bluepharma"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 07 Jan 2026 21:50:20 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"tradeName\": \"Bulmon\",\n        \"scientificName\": \"Moxifloxacin\",\n        \"usage\": \"Bacterial Infection\",\n        \"company\": \"Bluepharma\",\n        \"agent\": \"مستودع نيروخ\",\n        \"pharmaceuticalForm\": \"12550 436.8 MG 5 TAB\",\n        \"price\": 6.81,\n        \"agentsPhoneNumber\": \"65657221\",\n        \"country\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Agent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/MedicationDetails/Agent?country=0&stringSerch=مستودع",
+					"protocol": "https",
+					"host": [
+						"digital-pharmacy-68073877190",
+						"europe-west1",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"MedicationDetails",
+						"Agent"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "0"
+						},
+						{
+							"key": "stringSerch",
+							"value": "مستودع"
+						}
+					]
+				},
+				"description": "country (Palestine = 1 , Jordan = 0)"
+			},
+			"response": [
+				{
+					"name": "Get Agent",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/MedicationDetails/Agent?country=0",
+							"protocol": "https",
+							"host": [
+								"digital-pharmacy-68073877190",
+								"europe-west1",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"MedicationDetails",
+								"Agent"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "0"
+								},
+								{
+									"key": "stringSerch",
+									"value": "مستودع",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 07 Jan 2026 21:50:25 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"company\": \"Bayer\",\n        \"agent\": \"مستودع خوري\",\n        \"agentsPhoneNumber\": \"65827015\"\n    },\n    {\n        \"company\": \"Bluepharma\",\n        \"agent\": \"مستودع نيروخ\",\n        \"agentsPhoneNumber\": \"65657221\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Medication Details By Agent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/MedicationDetails/ByAgentName?country=0&agentName=مستودع خوري",
+					"protocol": "https",
+					"host": [
+						"digital-pharmacy-68073877190",
+						"europe-west1",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"MedicationDetails",
+						"ByAgentName"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "0"
+						},
+						{
+							"key": "agentName",
+							"value": "مستودع خوري"
+						}
+					]
+				},
+				"description": "country (Palestine = 1 , Jordan = 0)"
+			},
+			"response": [
+				{
+					"name": "Medication Details By Agent",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/MedicationDetails/ByAgentName?country=0&agentName=مستودع خوري",
+							"protocol": "https",
+							"host": [
+								"digital-pharmacy-68073877190",
+								"europe-west1",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"MedicationDetails",
+								"ByAgentName"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "0"
+								},
+								{
+									"key": "agentName",
+									"value": "مستودع خوري"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 07 Jan 2026 21:50:33 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"tradeName\": \"Verquvo\",\n        \"scientificName\": \"Vericiguat micronized\",\n        \"usage\": \"Indicated to reduce the risk of cardiovascular death and heart failure\",\n        \"company\": \"Bayer\",\n        \"agent\": \"مستودع خوري\",\n        \"pharmaceuticalForm\": \"17033 10 mg 28 tab\",\n        \"price\": 106.95,\n        \"agentsPhoneNumber\": \"65827015\",\n        \"country\": 0\n    },\n    {\n        \"id\": 3,\n        \"tradeName\": \"Verquvo\",\n        \"scientificName\": \"Vericiguat micronized\",\n        \"usage\": \"Indicated to reduce the risk of cardiovascular death and heart failure\",\n        \"company\": \"Bayer\",\n        \"agent\": \"مستودع خوري\",\n        \"pharmaceuticalForm\": \"17033 2.5 mg 14 tab\",\n        \"price\": 53.48,\n        \"agentsPhoneNumber\": \"65827015\",\n        \"country\": 0\n    },\n    {\n        \"id\": 4,\n        \"tradeName\": \"Verquvo\",\n        \"scientificName\": \"Vericiguat micronized\",\n        \"usage\": \"Indicated to reduce the risk of cardiovascular death and heart failure\",\n        \"company\": \"Bayer\",\n        \"agent\": \"مستودع خوري\",\n        \"pharmaceuticalForm\": \"17033 5 mg 14 tab\",\n        \"price\": 53.48,\n        \"agentsPhoneNumber\": \"65827015\",\n        \"country\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Medication Details By TradeName or ScientificName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "country (Palestine = 1 , Jordan = 0)\n\nSearchType ( TradeName = 1, ScientificName = 2)"
+			},
+			"response": [
+				{
+					"name": "Medication Details By TradeName or ScientificName",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://digital-pharmacy-68073877190.europe-west1.run.app/api/MedicationDetails/ByName?country=Jordan&stringSerch=Vericiguat micronized&searchType=2",
+							"protocol": "https",
+							"host": [
+								"digital-pharmacy-68073877190",
+								"europe-west1",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"MedicationDetails",
+								"ByName"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "Jordan"
+								},
+								{
+									"key": "stringSerch",
+									"value": "Vericiguat micronized"
+								},
+								{
+									"key": "searchType",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 07 Jan 2026 21:50:38 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"tradeName\": \"Verquvo\",\n        \"scientificName\": \"Vericiguat micronized\",\n        \"usage\": \"Indicated to reduce the risk of cardiovascular death and heart failure\",\n        \"company\": \"Bayer\",\n        \"agent\": \"مستودع خوري\",\n        \"pharmaceuticalForm\": \"17033 10 mg 28 tab\",\n        \"price\": 106.95,\n        \"agentsPhoneNumber\": \"65827015\",\n        \"country\": 0\n    },\n    {\n        \"id\": 3,\n        \"tradeName\": \"Verquvo\",\n        \"scientificName\": \"Vericiguat micronized\",\n        \"usage\": \"Indicated to reduce the risk of cardiovascular death and heart failure\",\n        \"company\": \"Bayer\",\n        \"agent\": \"مستودع خوري\",\n        \"pharmaceuticalForm\": \"17033 2.5 mg 14 tab\",\n        \"price\": 53.48,\n        \"agentsPhoneNumber\": \"65827015\",\n        \"country\": 0\n    },\n    {\n        \"id\": 4,\n        \"tradeName\": \"Verquvo\",\n        \"scientificName\": \"Vericiguat micronized\",\n        \"usage\": \"Indicated to reduce the risk of cardiovascular death and heart failure\",\n        \"company\": \"Bayer\",\n        \"agent\": \"مستودع خوري\",\n        \"pharmaceuticalForm\": \"17033 5 mg 14 tab\",\n        \"price\": 53.48,\n        \"agentsPhoneNumber\": \"65827015\",\n        \"country\": 0\n    }\n]"
+				}
+			]
+		}
+	]
+}

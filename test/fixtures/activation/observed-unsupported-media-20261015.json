@@ -1,0 +1,20 @@
+{
+  "provenance": {
+    "kind": "observed actual server response, sanitized",
+    "method": "POST",
+    "path": "/api/users/verify-device",
+    "request": "Unsupported media type and one NUL byte; no auth, activationCode, deviceId or FCM token",
+    "scope": "Input-format validation only; not an invalid/expired/revoked code case",
+    "evidence": "docs/integration-audit-20261014/verify-device-media-validation-response-20261015.json"
+  },
+  "response": {
+    "statusCode": 415,
+    "contentType": "application/problem+json; charset=utf-8",
+    "body": {
+      "type": "https://tools.ietf.org/html/rfc9110#section-15.5.16",
+      "title": "Unsupported Media Type",
+      "status": 415,
+      "traceId": "[redacted]"
+    }
+  }
+}

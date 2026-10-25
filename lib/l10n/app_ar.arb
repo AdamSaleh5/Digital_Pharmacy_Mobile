@@ -1,0 +1,353 @@
+{
+  "@@locale": "ar",
+  "appName": "ديجيتال فارماسي",
+  "appTagline": "Digital Pharmacy",
+  "commonOk": "حسناً",
+  "commonClose": "إغلاق",
+  "commonAdPlaceholder": "مساحة إعلانية",
+  "commonComingSoon": "قريباً",
+  "commonCopySuccess": "تم نسخ الرقم",
+  "commonCall": "اتصال",
+  "actionRetry": "إعادة المحاولة",
+  "errorLoadingData": "حدث خطأ أثناء تحميل البيانات",
+  "apiAuthenticationRequired": "يتعذر الوصول إلى الخدمة. يرجى المحاولة لاحقاً.",
+  "authSettingsTitle": "حساب API",
+  "authHttpsSetupNeeded": "تم تعطيل تسجيل الدخول لعنوان API هذا. تحقق من إعداد عنوان API في التطبيق.",
+  "authHttpRiskNotice": "يستخدم هذا الاتصال HTTP. لا تُشفّر كلمة المرور والرمز أثناء النقل. استخدم تسجيل الدخول هذا على شبكة موثوقة فقط. يبقى الرمز في الذاكرة ولا يُحفظ أو يُسجّل.",
+  "notificationsSettingsTitle": "الإشعارات الفورية",
+  "notificationsNotEnabled": "الإشعارات غير مفعّلة لهذا التطبيق.",
+  "notificationsPermissionDenied": "تم رفض إذن الإشعارات.",
+  "notificationsPermissionProvisional": "الإشعارات مفعّلة بصمت.",
+  "notificationsPermissionEnabled": "الإشعارات مفعّلة.",
+  "notificationsUnsupported": "الإشعارات الفورية غير متاحة على هذه المنصة.",
+  "notificationsEnableAction": "تفعيل الإشعارات",
+  "notificationsDeniedHelp": "لتفعيلها لاحقاً، اسمح بإشعارات هذا التطبيق من إعدادات الجهاز.",
+  "authEmailLabel": "البريد الإلكتروني",
+  "authPasswordLabel": "كلمة المرور",
+  "authSignInAction": "تسجيل الدخول",
+  "authSignOutAction": "تسجيل الخروج",
+  "authSigningIn": "جارٍ تسجيل الدخول…",
+  "authSignedInMemory": "تظل الجلسة داخل التطبيق فقط، ولا يُحفظ رمز الدخول.",
+  "authLoginFailed": "تعذر تسجيل الدخول. تحقق من البيانات وحاول مجدداً.",
+  "authInvalidTokenResponse": "لم تتضمن استجابة الدخول رمز وصول صالحاً.",
+  "apiContractUnavailable": "هذه الميزة غير متاحة حتى يوفّر API الحقول والمعرّفات اللازمة.",
+  "apiDetailsUnavailable": "التفاصيل غير متاحة حتى يوفّر API معرّف الدواء.",
+  "errorLoadingPharmacies": "حدث خطأ أثناء تحميل الصيدليات",
+  "drugNotFound": "الدواء غير موجود.",
+  "viewAlternatives": "عرض بدائل هذا الدواء",
+  "noAlternativesFound": "لا توجد بدائل لهذا الدواء",
+  "alternativesForDrug": "بدائل {drugName}",
+  "@alternativesForDrug": {
+    "placeholders": {
+      "drugName": {
+        "type": "String"
+      }
+    }
+  },
+  "alternativesFoundCount": "تم العثور على {count} بدائل",
+  "@alternativesFoundCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "alternativesLoading": "جارٍ تحميل البدائل...",
+  "homeHeaderTitle": "ابحث عن دوائك أو الصيدلية",
+  "homeHeaderSubtitle": "اختر طريقة البحث المناسبة ثم اكتب الاسم للحصول على النتائج.",
+  "homeHeaderHelper": "يمكنك البحث بالاسم العلمي، التجاري، الشركة، الوكيل أو الصيدلية.",
+  "homeRemoveAds": "لإزالة الإعلانات: احصل على كود التفعيل",
+  "activationTitle": "كود التفعيل",
+  "activationDescription": "أدخل كود التفعيل. تتوقف الإعلانات بعد تأكيد الخادم تفعيل هذا التثبيت.",
+  "activationHttpRiskNotice": "التفعيل غير متاح حتى يتم إعداد اتصال آمن. لم يتغير إعداد الإعلانات المحفوظ.",
+  "activationCodeLabel": "كود التفعيل",
+  "activationSubmit": "تحقق من الكود",
+  "activationChecking": "جارٍ التحقق من الكود…",
+  "activationUnconfirmed": "لم يؤكّد الخادم حالة الكود. لم يتغير وضع الإعلانات الحالي.",
+  "activationVerificationFailed": "تعذر التحقق من الكود. يرجى المحاولة لاحقاً.",
+  "activationSignInRequired": "سجّل الدخول إلى حساب API من الإعدادات قبل التحقق من الكود.",
+  "activationOpenSettings": "فتح الإعدادات",
+  "activationDeviceUnavailable": "تعذر الحصول على رمز الجهاز من Firebase. تحقق من الاتصال ثم أعد المحاولة.",
+  "activationCodeRequired": "أدخل كود التفعيل.",
+  "homeActionScientificTitle": "البحث بالاسم العلمي",
+  "homeActionScientificSubtitle": "بدائل ونتائج دقيقة",
+  "homeActionTradeTitle": "البحث بالاسم التجاري",
+  "homeActionTradeSubtitle": "ابحث بالاسم الشائع",
+  "homeActionCompanyTitle": "البحث باسم الشركة",
+  "homeActionCompanySubtitle": "حسب الشركة المصنّعة",
+  "homeActionAgentTitle": "البحث باسم الوكيل",
+  "homeActionAgentSubtitle": "اعثر على المورد",
+  "homeActionPharmacyTitle": "دليل الصيدليات والمستودعات",
+  "homeActionPharmacySubtitle": "دليل الصيدليات",
+  "homeTipsTitle": "نصائح سريعة",
+  "homeTip1": "استخدم الاسم العلمي للعثور على بدائل أرخص.",
+  "homeTip2": "جرّب الفلاتر لتضييق النتائج حسب الشركة أو الشكل.",
+  "homeTip3": "يمكنك حفظ الأدوية المفضلة للوصول السريع لاحقاً.",
+  "settingsTitle": "الإعدادات",
+  "settingsSubtitle": "خصّص تجربتك",
+  "settingsInfoCard": "خصّص تجربتك وحدّث بياناتك بسهولة من صفحة الإعدادات.",
+  "settingsThemeTitle": "الوضع الليلي",
+  "settingsThemeSubtitle": "تبديل بين الداكن والفاتح",
+  "settingsLanguageTitle": "اللغة",
+  "settingsLanguageSubtitle": "العربية / الإنجليزية",
+  "settingsPrivacyTitle": "سياسة الخصوصية",
+  "settingsPrivacySubtitle": "تعرف على كيفية حماية بياناتك.",
+  "settingsMedicalTitle": "تنبيه طبي",
+  "settingsMedicalSubtitle": "المعلومات للاستدلال فقط.",
+  "settingsAlertTitle": "تنبيه",
+  "settingsAlertBody": "DigitalPharmacy يوفر معلومات مرجعية فقط ولا يغني عن استشارة الطبيب أو الصيدلي.",
+  "settingsVersionLabel": "DigitalPharmacy v1.0.0",
+  "settingsVersionDescription": "صنع بحب ❤️ لتسهيل إيجاد الدواء.",
+  "settingsLanguageArabic": "العربية",
+  "settingsLanguageEnglish": "English",
+  "settingsLanguageSectionTitle": "اللغة",
+  "settingsLanguageSectionSubtitle": "اختر لغة الواجهة",
+  "settingsCountrySectionTitle": "الدولة والعملة",
+  "settingsPrivacyOpenError": "تعذر فتح رابط سياسة الخصوصية",
+  "medicalReferencesTitle": "المصادر الطبية",
+  "medicalReferencesSubtitle": "راجع هذه المصادر الطبية الخارجية للتوثيق والتحقق قبل الاعتماد على أي معلومة طبية داخل التطبيق.",
+  "medicalReferencesOpenCta": "عرض المصادر الطبية",
+  "medicalReferencesSheetTitle": "المصادر الطبية",
+  "medicalReferencesSheetSubtitle": "اختر أحد المصادر التالية لفتح المرجع الخارجي والتحقق من المعلومة.",
+  "medicalReferenceOpenError": "تعذر فتح رابط المصدر الطبي",
+  "medicalSourceDailyMed": "DailyMed",
+  "medicalSourceMedlinePlus": "MedlinePlus",
+  "medicalSourceNhs": "NHS",
+  "medicalSourcesEntryTitle": "المصادر الطبية",
+  "medicalSourcesEntrySubtitle": "افتح التوثيقات والمراجع الخاصة بالمعلومات الطبية داخل التطبيق.",
+  "medicalSourcesPageTitle": "المصادر الطبية",
+  "medicalSourcesPageSubtitle": "توثيقات للمعلومات الطبية المعروضة داخل التطبيق",
+  "medicalSourcesIntro": "معلومات الاستخدام والبدائل وغيرها من المعلومات الطبية داخل التطبيق هي للاستدلال فقط. يُرجى التحقق منها من المصادر الخارجية التالية واستشارة الطبيب أو الصيدلي قبل اتخاذ أي قرار طبي.",
+  "iosReferenceNoticeTitle": "دليل مرجعي فقط",
+  "iosReferenceNoticeBody": "هذا القسم يعرض فهرسًا مرجعيًا للمنتجات الدوائية ومعلومات تعريفية عامة فقط. لا يُعد هذا التطبيق مزود خدمة صحية ولا يقدم تشخيصًا أو وصفًا أو نصيحة علاجية.",
+  "iosDirectoryHomeTitle": "فهرس الأدوية ودليل الصيدليات",
+  "iosDirectoryHomeSubtitle": "استعرض قوائم الأدوية والصيدليات حسب الاسم أو الشركة أو الوكيل أو الفئة.",
+  "iosDirectoryHomeHelper": "المحتوى داخل التطبيق مرجعي وتعريفي ويُستخدم للاستدلال العام فقط.",
+  "iosScientificIndexNav": "فهرس المنتجات حسب الاسم العلمي",
+  "iosAllProductsNav": "فهرس المنتجات",
+  "iosSearchSubtitleScientific": "استعرض المنتجات المرتبطة بالاسم العلمي.",
+  "iosSearchSubtitleCompany": "استعرض المنتجات حسب الشركة المصنّعة.",
+  "iosSearchSubtitleAll": "استعرض كامل فهرس المنتجات المتاح.",
+  "iosSearchHintAll": "ابحث باسم المنتج أو الاسم العلمي أو الشركة أو الوكيل…",
+  "iosEmptyAll": "لا توجد نتائج مطابقة ضمن فهرس المنتجات.",
+  "iosScientificDrugsTitle": "فهرس المنتجات حسب الاسم العلمي",
+  "iosScientificDrugsCount": "عدد المنتجات: {count}",
+  "@iosScientificDrugsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "iosScientificDrugsEmpty": "لا توجد منتجات مسجلة لهذا الاسم العلمي حاليًا.",
+  "iosProductNameLabel": "اسم المنتج",
+  "iosReferenceInfoLabel": "معلومة مرجعية",
+  "iosSimilarProductsLabel": "منتجات مشابهة",
+  "iosViewSimilarProducts": "عرض منتجات مشابهة",
+  "iosSimilarProductsForDrug": "منتجات مشابهة لـ {drugName}",
+  "@iosSimilarProductsForDrug": {
+    "placeholders": {
+      "drugName": {
+        "type": "String"
+      }
+    }
+  },
+  "iosNoSimilarProductsFound": "لا توجد منتجات مشابهة ظاهرة حاليًا لهذا المنتج.",
+  "iosProductFormsLabel": "أشكال المنتج المتاحة",
+  "countryJordan": "الأردن",
+  "countryPalestine": "فلسطين",
+  "countryConfirmTitle": "تأكيد الدولة",
+  "countryConfirmMessage": "هل أنت من {country}؟",
+  "@countryConfirmMessage": {
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "countryChooseTitle": "اختر دولتك",
+  "commonYes": "نعم",
+  "commonNo": "لا",
+  "navHome": "الرئيسية",
+  "navScientific": "البحث بالاسم العلمي",
+  "navTrade": "البحث بالاسم التجاري",
+  "navCompany": "البحث باسم الشركة",
+  "navAgent": "البحث باسم الوكيل",
+  "navPharmacy": "البحث باسم الصيدلية",
+  "navFavorites": "المفضلة",
+  "navSettings": "الإعدادات",
+  "navAllDrugs": "البحث عن دواء",
+  "drawerActivate": "تفعيل مزايا إضافية",
+  "searchSubtitleScientific": "ابحث بالأسماء العلمية واحصل على البدائل.",
+  "searchSubtitleTrade": "ابحث بالأسماء التجارية الشائعة.",
+  "searchSubtitleCompany": "اعرض الأدوية حسب الشركة المصنّعة.",
+  "searchSubtitleAgent": "استعرض المنتجات حسب الوكيل.",
+  "searchSubtitleAll": "نفس تجربة الصيدليات لكن لكامل الأدوية.",
+  "snackCopiedDrug": "تم نسخ معلومات الدواء",
+  "snackComingSoon": "قريباً",
+  "labelCompany": "الشركة",
+  "labelForm": "الشكل",
+  "labelStrength": "العيار",
+  "labelPrice": "السعر",
+  "labelOrigin": "المنشأ",
+  "labelScientificName": "الاسم العلمي",
+  "labelTradeName": "الاسم التجاري",
+  "labelManufacturer": "المصنّع",
+  "labelAgentName": "اسم الوكيل",
+  "labelAgentNumber": "رقم الوكيل",
+  "labelAgent": "الوكيل",
+  "labelUsage": "الاستخدام",
+  "labelDosageForms": "الأشكال الصيدلانية",
+  "labelAlternatives": "البدائل",
+  "actionShowForms": "الأشكال الصيدلانية",
+  "actionShowAlternatives": "عرض البدائل",
+  "tooltipCopy": "نسخ",
+  "tooltipCall": "اتصال",
+  "dosageFormsTitle": "الأشكال الصيدلانية",
+  "dosageFormsPrice": "السعر",
+  "dosageFormsClose": "إغلاق",
+  "pharmaceuticalForms": "الأشكال الصيدلانية",
+  "loadingForms": "جاري تحميل الأشكال...",
+  "noFormsAvailable": "لا توجد أشكال صيدلانية متاحة.",
+  "formsLoadFailed": "حدث خطأ أثناء تحميل الأشكال.",
+  "valueNotAvailable": "غير متوفر",
+  "drugCardTrade": "اسم الدواء",
+  "drugCardCompany": "الشركة",
+  "drugCardAgent": "الوكيل",
+  "drugCardScientific": "الاسم العلمي",
+  "drugCardButtonForms": "الأشكال الصيدلانية",
+  "pharmaciesTitle": "دليل الصيدليات",
+  "pharmaciesSubtitle": "دليل الصيدليات مع البحث السريع",
+  "pharmacyModeName": "اسم الصيدلية",
+  "pharmacyModeAddress": "العنوان",
+  "pharmacyModeManager": "اسم المسؤول",
+  "pharmacyModePhone": "رقم الهاتف",
+  "pharmacyHintName": "اكتب اسم الصيدلية للبحث",
+  "pharmacyHintAddress": "اكتب العنوان للبحث",
+  "pharmacyHintManager": "اكتب اسم المسؤول للبحث",
+  "pharmacyHintPhone": "اكتب رقم الهاتف للبحث",
+  "pharmaciesSearchBy": "البحث حسب: {mode}",
+  "@pharmaciesSearchBy": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "pharmaciesMatches": "عدد الصيدليات المطابقة: {count}",
+  "@pharmaciesMatches": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pharmaciesEmpty": "لم يتم العثور على صيدليات مطابقة. جرّب تصنيفاً آخر.",
+  "pharmacyDetailsSubtitle": "بيانات الصيدلية",
+  "pharmacyAddress": "العنوان",
+  "pharmacyManager": "اسم المسؤول",
+  "pharmacyPhone": "الهاتف",
+  "favoritesTitle": "الأدوية المفضلة",
+  "favoritesSubtitle": "كل ما حفظته في مكان واحد",
+  "favoritesCardTitle": "قائمتك الخاصة",
+  "favoritesCardSubtitle": "{count} وصفة محفوظة",
+  "@favoritesCardSubtitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "favoritesSearchHint": "ابحث داخل المفضلة…",
+  "favoritesEmpty": "لا يوجد أدوية مفضلة بعد.\nأضف الأدوية من صفحة التفاصيل.",
+  "queryBarHint": "اكتب عبارة للبحث…",
+  "resultsCount": "عدد النتائج: {count}",
+  "@resultsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "matchingResultsCount": "عدد النتائج المطابقة: {count}",
+  "@matchingResultsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "drugsPageTitle": "الأدوية",
+  "drugsPageSubtitle": "نفس تجربة الصيدليات لكن لكامل الأدوية",
+  "drugsSearchHint": "ابحث باسم الدواء أو الاسم العلمي أو الشركة أو الوكيل…",
+  "drugsMatches": "عدد الأدوية المطابقة: {count}",
+  "@drugsMatches": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "drugsEmpty": "لا توجد نتائج مطابقة. جرّب كلمة أخرى.",
+  "tradeDetailsSubtitle": "تفاصيل الاسم التجاري",
+  "tradeDetailsCount": "عدد التركيبات المطابقة: {count}",
+  "@tradeDetailsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tradeDetailsEmpty": "لا توجد بيانات متاحة لهذا الاسم التجاري.",
+  "companyDrugsSubtitle": "منتجات هذه الشركة",
+  "catalogCountryUnverified": "لا يوفّر API ربطًا موثوقًا للدولة ضمن هذا الدليل؛ قد لا تطابق النتائج الدولة المحددة.",
+  "companyDrugsEmpty": "لا توجد أدوية مسجّلة لهذه الشركة.",
+  "agentDrugsSubtitle": "الأدوية التابعة لهذا الوكيل",
+  "agentDrugsEmpty": "لا توجد أدوية مسجّلة لهذا الوكيل.",
+  "scientificDrugsTitle": "أدوية الاسم العلمي",
+  "scientificDrugsCount": "عدد الأدوية: {count}",
+  "@scientificDrugsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "scientificDrugsEmpty": "لا توجد أدوية مسجلة لهذا الاسم العلمي حالياً.",
+  "searchResultsCount": "عدد النتائج: {count}",
+  "@searchResultsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchNoResults": "لا توجد نتائج مطابقة. جرّب عبارة أخرى.",
+  "searchHintScientific": "اكتب الاسم العلمي…",
+  "searchHintTrade": "اكتب الاسم التجاري…",
+  "searchHintCompany": "اكتب اسم الشركة…",
+  "searchHintAgent": "اكتب اسم الوكيل…",
+  "searchHintDrug": "ابحث باسم الدواء أو الشركة…",
+  "emptyScientific": "لا توجد أدوية مسجلة لهذا الاسم العلمي حالياً.",
+  "emptyTrade": "لا توجد بيانات لهذا الاسم التجاري.",
+  "emptyCompany": "لا توجد أدوية تابعة لهذه الشركة.",
+  "emptyAgent": "لا توجد أدوية مسجلة لهذا الوكيل.",
+  "emptyAll": "لا توجد نتائج مطابقة. جرّب عبارة مختلفة.",
+  "languageSectionTitle": "اللغة",
+  "languageSectionSubtitle": "اختر اللغة المفضلة",
+  "languageArabic": "العربية",
+  "languageEnglish": "English",
+  "adPrivacyOptions": "خيارات خصوصية الإعلانات",
+  "reportAdTitle": "الإبلاغ عن إعلان غير مناسب",
+  "reportAdDescription": "أبلغ Google عن إعلان ضار أو غير مناسب للعمر.",
+  "storeEntitlementUnavailable": "أكواد التفعيل الخاصة غير متاحة على هذه المنصة. تتطلب إزالة الإعلانات استحقاقاً مدعوماً من المتجر.",
+  "loadMoreResults": "عرض المزيد من النتائج",
+  "addFavorite": "حفظ الدواء",
+  "removeFavorite": "إزالة الدواء المحفوظ",
+  "legacyFavoritesRetained": "العناصر المحفوظة سابقاً ما زالت محفوظة. أعد اختيارها من دليل الخادم لربط تفاصيلها الحالية.",
+  "activationConfirmed": "تم تأكيد التفعيل. جميع الإعلانات متوقفة.",
+  "activationNotSaved": "أكّد الخادم التفعيل، لكن تعذّر حفظه في التطبيق. الإعلانات معلّقة؛ أعد المحاولة.",
+  "activationRejected": "لم يُقبل كود التفعيل.",
+  "selectionCountryChanged": "تغيّرت الدولة. ارجع واختر نتيجة تخص الدولة المحددة.",
+  "priceCurrencyUnspecified": "العملة غير محددة"
+}

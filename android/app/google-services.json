@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "237924915664",
+    "project_id": "digital-pharmacy-mk-9fe73",
+    "storage_bucket": "digital-pharmacy-mk-9fe73.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237924915664:android:f04c08e94a6be2c3d6c1d5",
+        "android_client_info": {
+          "package_name": "com.digitalpharmacy.digitalpharmacy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj_8WcV7zl1BCiAj0FJJelYNKjf9NnVus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

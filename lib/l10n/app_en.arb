@@ -1,0 +1,353 @@
+{
+  "@@locale": "en",
+  "appName": "DigitalPharmacy",
+  "appTagline": "Digital Pharmacy",
+  "commonOk": "OK",
+  "commonClose": "Close",
+  "commonAdPlaceholder": "Ad space",
+  "commonComingSoon": "Coming soon",
+  "commonCopySuccess": "Number copied",
+  "commonCall": "Call",
+  "actionRetry": "Retry",
+  "errorLoadingData": "An error occurred while loading data",
+  "apiAuthenticationRequired": "The service is not accessible. Please try again later.",
+  "authSettingsTitle": "API account",
+  "authHttpsSetupNeeded": "Sign-in is disabled for this API address. Check the app's API configuration.",
+  "authHttpRiskNotice": "This connection uses HTTP. Your password and token are not encrypted in transit. Use this sign-in only on a trusted network. The token stays in memory and is never saved or logged.",
+  "notificationsSettingsTitle": "Push notifications",
+  "notificationsNotEnabled": "Notifications are not enabled for this app.",
+  "notificationsPermissionDenied": "Notification permission is denied.",
+  "notificationsPermissionProvisional": "Notifications are enabled quietly.",
+  "notificationsPermissionEnabled": "Notifications are enabled.",
+  "notificationsUnsupported": "Push notifications are unavailable on this platform.",
+  "notificationsEnableAction": "Enable notifications",
+  "notificationsDeniedHelp": "To enable later, allow notifications for this app in your device settings.",
+  "authEmailLabel": "Email",
+  "authPasswordLabel": "Password",
+  "authSignInAction": "Sign in",
+  "authSignOutAction": "Sign out",
+  "authSigningIn": "Signing in…",
+  "authSignedInMemory": "Signed in for this app session only. The token is not saved.",
+  "authLoginFailed": "Sign-in failed. Check the details and try again.",
+  "authInvalidTokenResponse": "The login response did not include a usable access token.",
+  "apiContractUnavailable": "This feature is unavailable until the API provides the response fields and IDs it needs.",
+  "apiDetailsUnavailable": "Details are unavailable until the API provides a medication ID.",
+  "errorLoadingPharmacies": "An error occurred while loading pharmacies",
+  "drugNotFound": "Drug not found.",
+  "viewAlternatives": "View alternatives",
+  "noAlternativesFound": "No alternatives found for this drug.",
+  "alternativesForDrug": "Alternatives for {drugName}",
+  "@alternativesForDrug": {
+    "placeholders": {
+      "drugName": {
+        "type": "String"
+      }
+    }
+  },
+  "alternativesFoundCount": "Found {count} alternatives",
+  "@alternativesFoundCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "alternativesLoading": "Loading alternatives…",
+  "homeHeaderTitle": "Find your medicine or pharmacy",
+  "homeHeaderSubtitle": "Choose the right search mode and type the name to view results.",
+  "homeHeaderHelper": "Search by scientific name, trade name, company, agent, or pharmacy.",
+  "homeRemoveAds": "Remove ads: Get an activation code",
+  "activationTitle": "Activation code",
+  "activationDescription": "Enter your activation code. Ads stop after the server confirms activation for this installation.",
+  "activationHttpRiskNotice": "Activation is unavailable until a secure connection is configured. Your saved ad setting is unchanged.",
+  "activationCodeLabel": "Activation code",
+  "activationSubmit": "Verify code",
+  "activationChecking": "Checking code…",
+  "activationUnconfirmed": "The server did not confirm the code's status. Your current ad setting has not changed.",
+  "activationVerificationFailed": "Unable to verify the code. Please try again later.",
+  "activationSignInRequired": "Sign in to your API account in Settings before verifying a code.",
+  "activationOpenSettings": "Open Settings",
+  "activationDeviceUnavailable": "Unable to obtain the device messaging token. Check your connection and try again.",
+  "activationCodeRequired": "Enter an activation code.",
+  "homeActionScientificTitle": "Search by scientific name",
+  "homeActionScientificSubtitle": "Alternatives and accurate results",
+  "homeActionTradeTitle": "Search by trade name",
+  "homeActionTradeSubtitle": "Search the popular names",
+  "homeActionCompanyTitle": "Search by company",
+  "homeActionCompanySubtitle": "Browse by manufacturer",
+  "homeActionAgentTitle": "Search by agent",
+  "homeActionAgentSubtitle": "Find the supplier",
+  "homeActionPharmacyTitle": "Pharmacy and warehouse directory",
+  "homeActionPharmacySubtitle": "Pharmacy directory",
+  "homeTipsTitle": "Quick tips",
+  "homeTip1": "Use the scientific name to discover cheaper alternatives.",
+  "homeTip2": "Try filters to narrow results by company or dosage form.",
+  "homeTip3": "Save favorite drugs for fast access later.",
+  "settingsTitle": "Settings",
+  "settingsSubtitle": "Customize your experience",
+  "settingsInfoCard": "Update your preferences and data directly from the settings page.",
+  "settingsThemeTitle": "Dark mode",
+  "settingsThemeSubtitle": "Switch between dark and light",
+  "settingsLanguageTitle": "Language",
+  "settingsLanguageSubtitle": "Arabic / English",
+  "settingsPrivacyTitle": "Privacy policy",
+  "settingsPrivacySubtitle": "Learn how we protect your data.",
+  "settingsMedicalTitle": "Medical notice",
+  "settingsMedicalSubtitle": "Information for reference only.",
+  "settingsAlertTitle": "Notice",
+  "settingsAlertBody": "DigitalPharmacy provides reference information only and does not replace medical advice.",
+  "settingsVersionLabel": "DigitalPharmacy v1.0.0",
+  "settingsVersionDescription": "Made with ❤️ to make finding medicine easier.",
+  "settingsLanguageArabic": "Arabic",
+  "settingsLanguageEnglish": "English",
+  "settingsLanguageSectionTitle": "Language",
+  "settingsLanguageSectionSubtitle": "Choose the interface language",
+  "settingsCountrySectionTitle": "Country & Currency",
+  "settingsPrivacyOpenError": "Could not open privacy policy link",
+  "medicalReferencesTitle": "Medical references",
+  "medicalReferencesSubtitle": "Review these external medical sources for citation and verification before relying on any medical information in the app.",
+  "medicalReferencesOpenCta": "Open medical sources",
+  "medicalReferencesSheetTitle": "Medical sources",
+  "medicalReferencesSheetSubtitle": "Choose one of the following sources to open the external reference and verify the information.",
+  "medicalReferenceOpenError": "Could not open the medical reference link",
+  "medicalSourceDailyMed": "DailyMed",
+  "medicalSourceMedlinePlus": "MedlinePlus",
+  "medicalSourceNhs": "NHS",
+  "medicalSourcesEntryTitle": "Medical sources",
+  "medicalSourcesEntrySubtitle": "Open the citations and references used for medical information.",
+  "medicalSourcesPageTitle": "Medical sources",
+  "medicalSourcesPageSubtitle": "Citations for the medical information shown in the app",
+  "medicalSourcesIntro": "Drug usage, alternatives, and other medical information shown in the app are for reference only. Please verify them using the external sources below and consult a doctor or pharmacist before making any medical decision.",
+  "iosReferenceNoticeTitle": "Reference directory only",
+  "iosReferenceNoticeBody": "This section shows a reference index of drug products and general descriptive information only. The app is not a healthcare provider and does not offer diagnosis, prescriptions, or treatment advice.",
+  "iosDirectoryHomeTitle": "Drug index and pharmacy directory",
+  "iosDirectoryHomeSubtitle": "Browse drug and pharmacy listings by name, company, agent, or category.",
+  "iosDirectoryHomeHelper": "Content shown in the app is descriptive and reference-only for general lookup.",
+  "iosScientificIndexNav": "Product index by scientific name",
+  "iosAllProductsNav": "Product index",
+  "iosSearchSubtitleScientific": "Browse products linked to the scientific name.",
+  "iosSearchSubtitleCompany": "Browse products by manufacturer.",
+  "iosSearchSubtitleAll": "Browse the full available product index.",
+  "iosSearchHintAll": "Search by product name, scientific name, company, or agent…",
+  "iosEmptyAll": "No matching results were found in the product index.",
+  "iosScientificDrugsTitle": "Product index by scientific name",
+  "iosScientificDrugsCount": "Products count: {count}",
+  "@iosScientificDrugsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "iosScientificDrugsEmpty": "No products are currently listed for this scientific name.",
+  "iosProductNameLabel": "Product name",
+  "iosReferenceInfoLabel": "Reference note",
+  "iosSimilarProductsLabel": "Similar products",
+  "iosViewSimilarProducts": "View similar products",
+  "iosSimilarProductsForDrug": "Similar products for {drugName}",
+  "@iosSimilarProductsForDrug": {
+    "placeholders": {
+      "drugName": {
+        "type": "String"
+      }
+    }
+  },
+  "iosNoSimilarProductsFound": "No similar products are currently listed for this item.",
+  "iosProductFormsLabel": "Available product forms",
+  "countryJordan": "Jordan",
+  "countryPalestine": "Palestine",
+  "countryConfirmTitle": "Confirm country",
+  "countryConfirmMessage": "Are you from {country}?",
+  "@countryConfirmMessage": {
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "countryChooseTitle": "Choose your country",
+  "commonYes": "Yes",
+  "commonNo": "No",
+  "navHome": "Home",
+  "navScientific": "Search by scientific name",
+  "navTrade": "Search by trade name",
+  "navCompany": "Search by company",
+  "navAgent": "Search by agent",
+  "navPharmacy": "Search by pharmacy",
+  "navFavorites": "Favorites",
+  "navSettings": "Settings",
+  "navAllDrugs": "Drug search",
+  "drawerActivate": "Activate extra features",
+  "searchSubtitleScientific": "Search scientific names and find alternatives.",
+  "searchSubtitleTrade": "Search the popular trade names.",
+  "searchSubtitleCompany": "Browse drugs by manufacturer.",
+  "searchSubtitleAgent": "Browse products by agent.",
+  "searchSubtitleAll": "The same pharmacy experience for all drugs.",
+  "snackCopiedDrug": "Drug info copied",
+  "snackComingSoon": "Coming soon",
+  "labelCompany": "Company",
+  "labelForm": "Dosage form",
+  "labelStrength": "Strength",
+  "labelPrice": "Price",
+  "labelOrigin": "Origin",
+  "labelScientificName": "Scientific name",
+  "labelTradeName": "Trade name",
+  "labelManufacturer": "Manufacturer",
+  "labelAgentName": "Agent name",
+  "labelAgentNumber": "Agent number",
+  "labelAgent": "Agent",
+  "labelUsage": "Usage",
+  "labelDosageForms": "Dosage forms",
+  "labelAlternatives": "Alternatives",
+  "actionShowForms": "Pharmaceutical forms",
+  "actionShowAlternatives": "Show alternatives",
+  "tooltipCopy": "Copy",
+  "tooltipCall": "Call",
+  "dosageFormsTitle": "Dosage forms",
+  "dosageFormsPrice": "Price",
+  "dosageFormsClose": "Close",
+  "pharmaceuticalForms": "Pharmaceutical forms",
+  "loadingForms": "Loading forms...",
+  "noFormsAvailable": "No pharmaceutical forms available.",
+  "formsLoadFailed": "Failed to load forms.",
+  "valueNotAvailable": "Not available",
+  "drugCardTrade": "Trade name",
+  "drugCardCompany": "Company",
+  "drugCardAgent": "Agent",
+  "drugCardScientific": "Scientific name",
+  "drugCardButtonForms": "Dosage forms",
+  "pharmaciesTitle": "Pharmacy Directory",
+  "pharmaciesSubtitle": "Directory with quick search",
+  "pharmacyModeName": "Pharmacy name",
+  "pharmacyModeAddress": "Address",
+  "pharmacyModeManager": "Manager name",
+  "pharmacyModePhone": "Phone number",
+  "pharmacyHintName": "Type the pharmacy name",
+  "pharmacyHintAddress": "Type the address",
+  "pharmacyHintManager": "Type the manager's name",
+  "pharmacyHintPhone": "Type the phone number",
+  "pharmaciesSearchBy": "Search by: {mode}",
+  "@pharmaciesSearchBy": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "pharmaciesMatches": "Matching pharmacies: {count}",
+  "@pharmaciesMatches": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pharmaciesEmpty": "No pharmacies found. Try another filter.",
+  "pharmacyDetailsSubtitle": "Pharmacy info",
+  "pharmacyAddress": "Address",
+  "pharmacyManager": "Manager",
+  "pharmacyPhone": "Phone",
+  "favoritesTitle": "Favorite drugs",
+  "favoritesSubtitle": "Everything you saved in one place",
+  "favoritesCardTitle": "Your personal list",
+  "favoritesCardSubtitle": "{count} saved medications",
+  "@favoritesCardSubtitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "favoritesSearchHint": "Search inside favorites…",
+  "favoritesEmpty": "No favorite drugs yet.\nAdd them from the details page.",
+  "queryBarHint": "Type a phrase to search…",
+  "resultsCount": "Results: {count}",
+  "@resultsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "matchingResultsCount": "Matching results: {count}",
+  "@matchingResultsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "drugsPageTitle": "Drugs",
+  "drugsPageSubtitle": "Pharmacy-style explorer for all drugs",
+  "drugsSearchHint": "Search by drug name, scientific name, company, or agent…",
+  "drugsMatches": "Matching drugs: {count}",
+  "@drugsMatches": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "drugsEmpty": "No matching drugs. Try another term.",
+  "tradeDetailsSubtitle": "Trade name details",
+  "tradeDetailsCount": "Matching formulations: {count}",
+  "@tradeDetailsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tradeDetailsEmpty": "No data available for this trade name.",
+  "companyDrugsSubtitle": "Products from this company",
+  "catalogCountryUnverified": "The API has no verified country mapping for this catalog; results may not match the selected country.",
+  "companyDrugsEmpty": "No registered drugs for this company.",
+  "agentDrugsSubtitle": "Drugs for this agent",
+  "agentDrugsEmpty": "No registered drugs for this agent.",
+  "scientificDrugsTitle": "Scientific name drugs",
+  "scientificDrugsCount": "Drugs: {count}",
+  "@scientificDrugsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "scientificDrugsEmpty": "No drugs currently recorded for this scientific name.",
+  "searchResultsCount": "Results: {count}",
+  "@searchResultsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchNoResults": "No matching results. Try another keyword.",
+  "searchHintScientific": "Type the scientific name…",
+  "searchHintTrade": "Type the trade name…",
+  "searchHintCompany": "Type the company name…",
+  "searchHintAgent": "Type the agent name…",
+  "searchHintDrug": "Search by drug or company name…",
+  "emptyScientific": "No drugs registered for this scientific name yet.",
+  "emptyTrade": "No data for this trade name.",
+  "emptyCompany": "No drugs for this company.",
+  "emptyAgent": "No drugs registered for this agent.",
+  "emptyAll": "No matching results. Try a different phrase.",
+  "languageSectionTitle": "Language",
+  "languageSectionSubtitle": "Choose your preferred language",
+  "languageArabic": "Arabic",
+  "languageEnglish": "English",
+  "adPrivacyOptions": "Ad privacy choices",
+  "reportAdTitle": "Report an inappropriate ad",
+  "reportAdDescription": "Report harmful or age-inappropriate advertising to Google.",
+  "storeEntitlementUnavailable": "Custom activation codes are unavailable on this platform. Ad-free access requires a supported store entitlement.",
+  "loadMoreResults": "Load more results",
+  "addFavorite": "Save medication",
+  "removeFavorite": "Remove saved medication",
+  "legacyFavoritesRetained": "Your earlier saved items are retained. Select them again from the server catalogue to link their current details.",
+  "activationConfirmed": "Activation confirmed. All ads are off.",
+  "activationNotSaved": "The server confirmed activation, but the app could not save it. Ads are paused; try again.",
+  "activationRejected": "The activation code was not accepted.",
+  "selectionCountryChanged": "Country changed. Go back and choose a result for the selected country.",
+  "priceCurrencyUnspecified": "currency unspecified"
+}
